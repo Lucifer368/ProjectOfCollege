@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Al-Hayat College - Addmission Form</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/index-styles.css" />
+    <link rel="stylesheet" href="css/admission-styles.css" />
+  </head>
+  <body>
+    <div class="sub__sub__sub__header">
+      <nav>
+        <a href="#"><img src="img/logo.png" /></a>
+        <div class="nav__links" id="nav_links">
+          <i class="fa fa-times" onclick="hidemenu()"></i>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Academics.html">Academics</a></li>
+            <li><a href="studentlife.html">Student Life</a></li>
+            <li><a href="admission.html">Admissions</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showmenu()"></i>
+      </nav>
+    </div>
+    <!-- ====== Apply Section ===== -->
+    <div class="container">
+      <div class="apply_box">
+        <h1>Addmission Form</h1>
+        <form action="">
+          <div class="form_container">
+            <div class="form_control">
+              <label for="first_name"> First Name </label>
+              <input
+                id="first_name"
+                name="first_name"
+                placeholder="Enter First Name..."
+                required=""
+              />
+            </div>
+            <div class="form_control">
+              <label for="last_name"> Last Name </label>
+              <input
+                id="last_name"
+                name="last_name"
+                placeholder="Enter Last Name..."
+                required=""
+              />
+            </div>
+            <div class="form_control">
+              <label for="number">Personal Phone Number</label>
+              <input
+                type="Number"
+                id="Phone Number"
+                name="Phone Number"
+                placeholder="Enter Phone Number..."
+                required=""
+              />
+            </div>
+            <div class="form_control">
+              <label for="course"> Course </label>
+              <select id="course" name="course">
+                <option value="">Select Your Course</option>
+                <option value="Intermediate">Intermediate</option>
+                <option value="Degree">Degree</option>
+                <option value="Graduation">Graduation</option>
+              </select>
+            </div>
+            <div class="textarea_control">
+              <label for="address"> Address </label>
+              <textarea
+                id="address"
+                name="address"
+                row="4"
+                cols="50"
+                placeholder="Enter Address"
+                required=""
+              ></textarea>
+            </div>
+            <div class="form_control">
+              <label for="city"> City </label>
+              <input
+                id="city"
+                name="city"
+                placeholder="Enter City Name..."
+                required=""
+              />
+            </div>
+            <div class="form_control">
+              <label for="number"> Father Phone Number </label>
+              <input
+                type="number"
+                id="number"
+                name="number"
+                placeholder="Enter Phone Number..."
+                required=""
+              />
+            </div>
+            <div class="form_control">
+              <label for="date"> Date </label>
+              <input
+                value="2022-01-10"
+                type="date"
+                id="date"
+                name="date"
+                required=""
+              />
+            </div>
+          </div>
+          <div class="button_container">
+            <button type="submit">Apply Now</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- ====== Javascript For Menu ===== -->
+    <script>
+      var nav_links = document.getElementById("nav_links");
+      function showmenu() {
+        nav_links.style.right = "0";
+      }
+      function hidemenu() {
+        nav_links.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
